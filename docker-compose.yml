@@ -1,0 +1,10 @@
+version: '3.2'
+
+services:
+  webapi-python:
+    build: ./app
+    command:
+      hello.py
+    ports:
+      - target: 8080
+        published: 8080
